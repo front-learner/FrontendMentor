@@ -1,0 +1,124 @@
+@font-face {
+    font-family: Inter;
+    src: url('https://fonts.google.com/specimen/Inter');
+}
+
+@font-face {
+    font-family: Lexend;
+    src: url('https://fonts.google.com/specimen/Lexend+Deca');
+}
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main {
+    background-color: hsl(233, 47%, 7%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    color: #fff;
+    border-radius: 10px;
+    margin: 40px;
+}
+
+.card__blog {
+    padding: 50px 40px;
+    max-width: 600px;
+    margin-left: 20px;
+}
+
+.card__title {
+    font-size: 45px;
+    font-family: Inter, sans-serif;
+}
+
+.card__title span {
+    color: hsl(277, 64%, 61%);
+}
+
+.card__text {
+   margin-top: 35px;
+   color:  hsla(0, 0%, 100%, 0.75);
+   font-size: 19px;
+   font-family: Lexend, sans-serif;
+   max-width: 450px;
+   font-weight: 400;
+}
+
+.card__number {
+    display: flex;
+    margin-top: 60px;
+    font-family: Inter, sans-serif;
+}
+
+.card__number p {
+   color: hsla(0, 0%, 100%, 0.6);
+   margin-top: 10px; 
+}
+
+.companies, .templates {
+    margin-right: 30px;
+}
+
+
+
+.image {
+    border-radius:  0 10px 10px 0;
+    background-color:hsl(277, 64%, 61%);
+    max-width: 500px;
+}
+
+.image img {
+        max-width: 100%;
+        height: 100%;
+        border-radius: 0 10px 10px 0;
+        opacity: 0.6;
+}
+
+
+
+.attribution {
+    color:hsla(0, 0%, 100%, 0.6);
+    padding: 10px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+    .main {
+        max-width: auto;
+        height: auto;
+    }
+
+    .card {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card__number {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card__number .querise {
+        margin-right: 55px;
+    }
+    
+
+}
+    
